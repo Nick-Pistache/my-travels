@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
-import Travel from './Travel'
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Travels from "./Travels";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Travel
-          photo="http://marc-uhry.com/wp-content/uploads/2016/05/France.jpg"
-          destination="Paris"
-          country="Berlin"
-          distance="1000km"         
-        />
-        <Travel
-          photo="https://educaro.tn/wp-content/uploads/2018/03/berlin_1920x800-846x353.jpg"
-          destination="I believe the children are the future... Unless we stop them now!"
-          country="Berlin"
-          distance="2000km"         
-        />
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Simpsons Quotes</h1>
+        </header>
+        <Travels/>
       </div>
     );
   }
